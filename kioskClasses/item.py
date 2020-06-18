@@ -12,19 +12,19 @@ class Item():
         return self.itemname
 
     def setItemname(self, itemname):
-        return self.itemname=itemname
+        self.itemname=itemname
     
     def getItemtype(self):
         return self.itemtype
 
     def setItemtype(self, itemtype):
-        return self.itemtype=itemtype
+        self.itemtype=itemtype
 
     def getItemweight(self):
         return self.itemweight
     
     def setItemweight(self, itemweight):
-        return self.itemweight=itemweight
+        self.itemweight=itemweight
 
     def __str__(self):
-        return self.itemid + ' ' self.itemname + ' ' self.itemtype + ' ' + self.itemweight
+        return self.itemid + ' ' + self.itemname + ' ' + self.itemtype + ' ' + self.itemweight

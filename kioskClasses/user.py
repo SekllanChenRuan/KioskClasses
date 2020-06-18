@@ -20,4 +20,4 @@ class User():
         return self.phonenumber
 
     def __str__(self):
-        return self.userid + ' ' self.firstname + ' 'self.lastname + ' ' self.phonenumber
+        return self.userid + ' ' + self.firstname + ' ' + self.lastname + ' ' + self.phonenumber

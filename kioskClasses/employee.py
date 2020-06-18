@@ -1,19 +1,18 @@
-from user import User
+# from user import User
 
 #This is my attempt in inheriting from User
-class Employee(User):
-    def __init__(self, employeeid, employeeposition, hiredate, firstname, lastname, phonenumber):
-        User.__init__(userid, firstname, lastname, phonenumber)
+class Employee():
+    def __init__(self, employeeid, employeeposition, hiredate, firstname, lastname):
+        # User.__init__(userid, firstname, lastname, phonenumber)
         self.employeeid=employeeid
         self.employeeposition=employeeposition
         self.hiredate=hiredate
-        self.userid=userid
-        self.firstname=firstname
-        self.lastname=lastname
-        self.phonenumber=phonenumber
-    
+        self.employeename=firstname + ' ' + lastname
+
+
     def getEmployeename(self):
-        return self.employeename=self.firstname + ' ' self.lastname
+        return self.employeename
+        
 
     def getEmployeeid(self):
         return self.employeeid
@@ -22,16 +21,16 @@ class Employee(User):
         return self.employeeposition
     
     def setEmployeeposition(self, employeeposition):
-        return self.employeeposition=employeeposition
+        self.employeeposition=employeeposition
 
     def setEmployeephonenumber(self, phonenumber):
-        return self.phonenumber=phonenumber
+        self.phonenumber=phonenumber
 
     def getHiredate(self):
         return self.hiredate
     
     def __str__(self):
-        return self.employeeid + ' ' + self.employeename + ' ' + self.employeeposition + ' ' self.hiredate
+        return self.employeeid + ' ' + self.employeename + ' ' + self.employeeposition + ' ' + self.hiredate
 
 
 #used w3schools code for reference

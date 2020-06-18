@@ -1,23 +1,20 @@
-from user import User
+# from user import User
 
 #This is my attempt in inheriting from User
-class Customer(User):
-    def __init__(self, customerid):
-        User.__init__(userid, firstname, lastname, phonenumber)
+class Customer():
+    def __init__(self, customerid, firstname, lastname):
+        # User.__init__(userid, firstname, lastname, phonenumber)
         self.customerid=customerid
-        self.userid=userid
-        self.firstname=firstname
-        self.lastname=lastname
-        self.phonenumber=phonenumber
+        self.customername=firstname + ' ' + lastname
 
     def getCustomerid(self):
         return self.customerid
 
     def getCustomername(self):
-        return self.customername=self.firstname + ' ' + self.lastname 
+        return self.customername
 
     def __str__(self):
-        return  self.customerid + ' ' self.customername
+        return  self.customerid + ' ' + self.customername
 
 #used w3schools code for reference
 

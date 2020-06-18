@@ -1,5 +1,5 @@
 class Sale():
-    def __init__(self, saleid, saletotal, saledate, salequantity)
+    def __init__(self, saleid, saletotal, saledate, salequantity):
         self.saleid=saleid
         self.saletotal=saletotal
         self.saledate=saledate
@@ -18,4 +18,4 @@ class Sale():
         return self.salequantity
     
     def __str__(self):
-        return self.Saleid + ' ' + self.salequantity + ' ' + self.Saledate + ' ' + self.saletotal
+        return self.saleid + ' ' + self.salequantity + ' ' + self.saledate + ' ' + self.saletotal

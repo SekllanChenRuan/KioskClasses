@@ -11,10 +11,10 @@ class Discount():
         return self.discounttype
 
     def setDiscounttype(self, discounttype):
-        return self.discounttype=discounttype
+        self.discounttype=discounttype
 
     def getDiscountpercent(self):
         return self.discountpercent
 
     def __str__(self):
-        return self.discountid + ' ' self.discounttype + ' ' + self.discountpercent
+        return self.discountid + ' ' + self.discounttype + ' ' + self.discountpercent
