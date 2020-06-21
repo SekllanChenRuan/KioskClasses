@@ -1,6 +1,7 @@
 import unittest
 from kiosk import Kiosk
 from customer import Customer
+from employee import Employee
 
 class KioskTest(unittest.TestCase):
     def setUp(self):
@@ -40,3 +41,30 @@ class CustomerTest(unittest.TestCase):
     def test_getCustomerName(self):
         self.assertEqual(self.customer.getCustomername(), 'Abra Cadabra')
         
+class EmployeeTest(unittest.TestCase):
+    def setUp(self):
+        self.employee=Employee('23','Associate','today','1233','Keith','Leon','1233456789')
+    
+    def test_EmployeeString(self):
+        self.assertEqual(str(self.employee), '23 Keith Leon Associate today')
+    
+    def test_getEmployeeName(self):
+        self.assertEqual(self.employee.getEmployeename(), 'Keith Leon')
+
+    def test_getEmployeeId(self):
+        self.assertEqual(self.employee.getEmployeeid(), '23')
+    
+    def test_getEmployeePosition(self):
+        self.assertEqual(self.employee.getEmployeeposition(), 'Associate')
+
+    def test_getHireDate(self):
+        self.assertEqual(self.employee.getHiredate(), 'today')
+
+    def test_setEmployeePosition(self):
+        self.employee.setEmployeeposition('Manager')
+        self.assertEqual(self.employee.getEmployeeposition(), 'Manager')
+    
+    def test_setEmployeePhonenumber(self):
+        self.employee.setEmployeephonenumber('1233331111')
+        self.assertEqual(self.employee.getPhonenumber(), '1233331111')
+

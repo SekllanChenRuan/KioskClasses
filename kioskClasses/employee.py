@@ -1,9 +1,9 @@
-# from user import User
+from user import User
 
 #This is my attempt in inheriting from User
-class Employee():
-    def __init__(self, employeeid, employeeposition, hiredate, firstname, lastname):
-        # User.__init__(userid, firstname, lastname, phonenumber)
+class Employee(User):
+    def __init__(self, employeeid, employeeposition, hiredate, userid, firstname, lastname, phonenumber):
+        super().__init__(userid, firstname, lastname, phonenumber)
         self.employeeid=employeeid
         self.employeeposition=employeeposition
         self.hiredate=hiredate
